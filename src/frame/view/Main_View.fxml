@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import de.jensd.fx.glyphs.control.*?>
+<?import de.jensd.fx.glyphs.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1f253d;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frame.view.ButtonController">
+   <children>
+      <Pane layoutX="50.0" layoutY="62.0" prefHeight="150.0" prefWidth="700.0" style="-fx-background-color: #394263;" />
+      <Pane layoutX="50.0" layoutY="339.0" prefHeight="179.0" prefWidth="700.0" style="-fx-background-color: #394263;">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="141.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find duplicate Image" textAlignment="CENTER" wrappingWidth="417.13671875">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <ProgressBar fx:id="process" layoutX="75.0" layoutY="113.0" prefHeight="25.0" prefWidth="550.0" progress="0.0" style="-fx-accent: #e64c66;" />
+            <Text fx:id="Status" fill="WHITE" fontSmoothingType="LCD" layoutX="141.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="417.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="238.0" layoutY="62.0" mnemonicParsing="false" onAction="#AnalayzeButton" prefHeight="33.0" prefWidth="224.0" style="-fx-background-color: #e64c66;" text="Analayze" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <MenuBar prefHeight="38.0" prefWidth="800.0" style="-fx-background-color: #11a9ac;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="191.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your directory" textAlignment="CENTER" wrappingWidth="417.13671875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+      <Button layoutX="288.0" layoutY="125.0" mnemonicParsing="false" onAction="#DirButton" prefHeight="33.0" prefWidth="224.0" style="-fx-background-color: #11a9ac;" text="Browser" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Text id="Path_information" fx:id="Path_information" fill="WHITE" fontSmoothingType="LCD" layoutX="191.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="path information" textAlignment="CENTER" wrappingWidth="417.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

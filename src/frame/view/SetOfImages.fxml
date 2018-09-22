@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="310.0" prefWidth="1080.0" style="-fx-background-color: #1b253e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="316.0" prefWidth="1080.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Set " textAlignment="CENTER" wrappingWidth="1078.13671875">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <ScrollPane hbarPolicy="ALWAYS" prefHeight="269.0" prefWidth="1080.0" style="-fx-background-color: #1b253e;" vbarPolicy="NEVER">
+               <content>
+                  <HBox prefHeight="254.0" prefWidth="1077.0" spacing="12.0">
+                     <children>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="253.0" fitWidth="256.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../aviv%20photo/1525756_567961826624897_305208804_n.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

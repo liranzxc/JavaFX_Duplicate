@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #1b253e;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frame.select.SetImageController">
+   <children>
+      <VBox prefHeight="300.0" prefWidth="800.0">
+         <children>
+            <Text fx:id="Set_name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Set " textAlignment="CENTER" wrappingWidth="799.13671875">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <HBox fx:id="ImageSet" alignment="CENTER" spacing="12.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
