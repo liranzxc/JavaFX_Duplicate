@@ -11,7 +11,9 @@ import java.util.concurrent.ConcurrentMap;
 import frame.Main;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.text.Text;
 
 public class ButtonController {
@@ -66,19 +68,39 @@ public class ButtonController {
 
 						SetStatusAndProcessBar("finish get files ", 0.6);
 
-						scanobj.Copy_all_Files_to_duplicated(directory.getAbsolutePath(), key_List_Path);
+					//	scanobj.Copy_all_Files_to_duplicated(directory.getAbsolutePath(), key_List_Path);
 
 						SetStatusAndProcessBar("finish Copy all files ", 1);
 
 						
 						// open Big windows of sets 
-						Platform.runLater(new Open());
-
+						if(key_List_Path.size()!=0)
+							Platform.runLater(new OpenWindowsBigTheard(key_List_Path));
+						else
+							Platform.runLater(ShowNoDuplicateMessage());
 					} catch (IOException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 
+				}
+
+				private Runnable ShowNoDuplicateMessage() {
+					// TODO Auto-generated method stub
+					return new Runnable() {
+						
+						@Override
+						public void run() {
+							// TODO Auto-generated method stub
+							Alert alert = new Alert(AlertType.INFORMATION);
+							alert.setTitle("Confirmation Dialog");
+							alert.setHeaderText("There is not duplicate files");
+							alert.setContentText("Folder is clear from duplicate images");
+							
+							alert.showAndWait();
+						}
+					};
+					
 				}
 			}).start();
 
